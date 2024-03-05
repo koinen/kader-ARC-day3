@@ -1,0 +1,3 @@
+axios adalah library JavaScript yang digunakan untuk membuat request HTTP dari node.js dari browser. Axios sering digunakan untuk mengirim HTTP request asinkronus REST (Representational State Transfer) endpoint.
+Axios populer digunakan untuk berkomunikasi dengan backend. Axios juga men-support Promise API, yang native to JS ES6.
+Dengan menggunakan Axios, kita dapat membuat API request di dalam aplikasi. Setelah reqeust yang dibuat mendapatkan data Return, kita dapat menggunakan datanya dalam projek. 
