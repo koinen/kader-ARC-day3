@@ -5,7 +5,7 @@ const readline = require('readline').createInterface({
     output: process.stdout
   });
 
-function getUserInput(prompt) {
+function getUserInput(prompt){
     return new Promise((resolve) => {
         readline.question(prompt, (answer) => {
             resolve(answer);
@@ -14,18 +14,21 @@ function getUserInput(prompt) {
 }
 
 async function processGetOp(array, callback){
-    const Operator = await getUserInput('Ditambah (+)/ Dikali (*)?: ');
-    if (Operator != '+' && Operator != '*'){
-        return 0;
+    const Operator = await getUserInput('Ditambah (+)/ Dikali (*)/ Dirata-rata(_)?: ');
+    if (Operator != '+' && Operator != '*' && Operator != '_'){
+        process.exit(0);
     }
     return callback(array, Operator); 
 }
 
 function handle(array, Operator){
     let res = 0;
-    if(Operator == '+'){
+    if(Operator == '+' || Operator == '_'){
         for(let i = 0; i < array.length; i++){
             res += array[i];
+        }
+        if(Operator == '_'){
+            res /= array.length;
         }
     }
     else{
