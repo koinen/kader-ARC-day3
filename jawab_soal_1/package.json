@@ -1,0 +1,16 @@
+{
+  "name": "jawab_soal_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "abc": "node index.js"
+  },
+  "author": "david",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.6.7"
+  }
+}
